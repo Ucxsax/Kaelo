@@ -1,0 +1,21 @@
+# Kaelo 桌面视觉自动化系统依赖
+
+# 屏幕捕获
+mss>=9.0.0
+Pillow>=10.0.0
+
+# 元素识别
+opencv-python>=4.8.0
+numpy>=1.24.0
+
+# 键鼠操作
+pyautogui>=0.9.54
+
+# AI通信
+openai>=1.0.0
+# Ollama 是可选的，如需使用请安装: pip install ollama
+ollama>=0.3.0; python_version >= '3.8'
+
+# 工具库
+click>=8.1.0
+python-dotenv>=1.0.0

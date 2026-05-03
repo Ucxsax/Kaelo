@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kaelo"
+version = "1.0.0"
+description = "Kaelo - 轻量级桌面视觉自动化系统"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+  {name = "Kaelo Team"}
+]
+keywords = ["automation", "desktop", "ai", "visual", "screen"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Operating System :: Microsoft :: Windows",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+]
+
+dependencies = [
+  "mss>=9.0.0",
+  "Pillow>=10.0.0",
+  "opencv-python>=4.8.0",
+  "numpy>=1.24.0",
+  "pyautogui>=0.9.54",
+  "openai>=1.0.0",
+  "click>=8.1.0",
+  "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+kaelo = "main:main"
+
+[tool.setuptools]
+py-modules = ["main"]
+packages = ["agent_screen", "agent_comm", "agent_exec", "common"]
+
